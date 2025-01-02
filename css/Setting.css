@@ -1,0 +1,696 @@
+/* Start Global Style */
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "Open Sans", serif;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    border: none;
+}
+textarea{
+    resize: none;
+}
+
+/* End Global Style */
+/* Start Dashborad */
+.dashborad{
+    position: relative;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 312vh;
+    z-index: 1000;
+    
+}
+
+
+@media (max-width:4200px) {
+    .dashborad {
+        /* width: 3000px; */
+        height: 153vh;
+    }
+
+}
+@media (max-width:3356px) {
+    .dashborad {
+        /* width: 3000px; */
+        height: 153vh;
+    }
+}
+@media (max-width:2640px) {
+    .dashborad 
+    {
+        height: 160vh;
+    }
+
+}
+@media (max-width:1737px) {
+    .dashborad {
+        height: 287vh;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .dashborad {
+        height: 90vh;
+    }
+}
+
+
+
+@media (min-width:4200px) {
+    .dashborad {
+        height: 100vh;
+    }
+}
+@media (min-width:4900px) {
+    .dashborad {
+        height: 100vh;
+    }
+
+}
+
+/* @media (min-width:5300px) {
+    .dashborad {
+        
+    }
+
+} */
+
+
+
+
+
+@media (max-width:1840px){
+    .dashborad{
+        grid-template-columns: 150px 1fr;
+        
+    }
+
+    .dashborad .sidebar ul {
+        margin-left: -36px;
+    }
+   
+}
+
+
+/* End Dashborad */
+
+/* Start Sidebar */
+
+.dashborad .sidebar{
+    background-color: white;
+    box-shadow: 7px 10px 19px #ddd;
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.dashborad .sidebar>h3{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.dashborad .sidebar>h3::before{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    top: 87%;
+    width: 141px;
+    left: 53px;
+    height: 3px;
+
+}
+.dashborad .sidebar>h3::after{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    top: 70%;
+    width: 15px;
+    left: 105px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+
+@media  (max-width:1840px) {
+    .dashborad .sidebar>h3::before,
+    .dashborad .sidebar>h3::after
+    {
+       display: none;
+    }
+}
+.dashborad .sidebar ul{
+    /* text-align: center; */
+}
+.dashborad .sidebar ul li{
+    margin-bottom: 20px;
+    width: 186px;
+    height: 37px;
+    border-radius: 8px;
+}
+
+@media  (max-width:1840px) {
+    .dashborad .sidebar ul li{
+        margin-bottom: 20px;
+        width: 137px;
+        height: 37px;
+        border-radius: 8px;
+    }
+}
+
+.dashborad .sidebar ul li.active,
+.dashborad .sidebar ul li:hover{
+    background-color: #f6f6f6;
+}
+
+.dashborad .sidebar ul li a{
+    color: #404340;
+    padding: 5px 3px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+
+.dashborad .sidebar ul li a span{
+    padding-left: 3px;
+    
+}
+.dashborad .sidebar ul li a i{
+    padding-top: 10px;
+    padding-left: 3px;
+}
+/* End Sidebar */
+
+/* Start Contant */
+.dashborad .contant{
+    background-color: #f1f5f9;
+    z-index: -1;
+    width: 100%;
+}
+.dashborad .contant .search{
+    background-color: white;
+    height: 80px;
+    position: relative;
+    width: 100%;
+}
+.dashborad .contant .search .search-box{
+    padding-top: 10px;
+    padding-left: 20px;
+    border: 1px solid #888888;
+    width: 236px;
+    height: 42px;
+    border-radius: 17px;
+    margin-left: 20px;
+    position: absolute;
+    top: 25%;
+}
+.dashborad .contant .search .search-box i{
+    color: #888888;
+}
+
+.dashborad .contant .search .search-box input{
+    border: none;
+}
+
+/* Start Cards */
+
+.dashborad .contant h3{
+    margin-left: 25px;
+    margin-top: 27px;
+    font-size: 45px;
+}
+
+.dashborad .contant .cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 740px 740px 740px;
+    /* grid-template-rows: 600px  600px 600px 600px; */
+    grid-gap: 25px;
+}
+
+@media (min-width:3360px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px 740px 740px;
+        
+    }
+    
+}
+@media (min-width:4200px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px 740px 740px 740px;
+        
+    }
+    
+}
+@media (min-width:4900px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px 740px 740px 740px 740px;
+        
+    }
+    
+}
+@media (min-width:5300px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px 740px 740px 740px 740px 740px;
+        
+    }
+    
+}
+@media (max-width:2640px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px ;
+        
+    }
+    
+}
+@media (max-width:1737px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px ;
+        
+    }
+    
+}
+
+.dashborad .contant .cards .card{
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    margin-left: 30px;
+    width: 707px;
+    height: 470px;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+
+.dashborad .contant .cards .card .header{
+    position: absolute;
+    position: absolute;
+    background-color: #eee;
+    width: 100%;
+    height: 193px;
+    left: 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.dashborad .contant .cards .card .header h2{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 14px;
+    font-size: 30px;
+}
+
+.dashborad .contant .cards .card:first-child .header{
+    background-color: white;
+}
+
+.dashborad .contant .cards .card .header p{
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 13px;
+    color: gray;
+    font-size: 20px;
+
+}
+
+.dashborad .contant .cards .card:first-child .control{
+    position: relative;
+    top: 100px;
+    left: 4px;
+}
+.dashborad .contant .cards .card:first-child .control h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 15px;
+
+}
+.dashborad .contant .cards .card:first-child .control p{
+    color: gray;
+    font-size: 20px;
+
+}
+.dashborad .contant .cards .card:first-child .control i{
+    position: absolute;
+    right: 24px;
+    top: 45px;
+    z-index: 1000;
+    color: #0075ff;
+    font-size: 20px;
+}
+.dashborad .contant .cards .card:first-child .control::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 39%;
+    background-color: #0075ff;
+    height: 41px;
+    width: 101px;
+    border-radius: 21px;
+}
+
+.dashborad .contant .cards .card:first-child .control::after{
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 44%;
+    background-color: white;
+    height: 33px;
+    width: 33px;
+    border-radius: 21px;
+}
+
+.dashborad .contant .cards .card:first-child textarea{
+    position: absolute;
+    top: 209px;
+    left: 16px;
+    background-color: white;
+    height: 39%;
+    width: 94%;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 17px;
+    border: 1px solid #3333;
+}
+
+
+.dashborad .contant .cards .card:nth-child(2) .header{
+    background-color: white;
+}
+.dashborad .contant .cards .card:nth-child(2) .header p{
+    padding-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 2px;
+}
+
+.dashborad .contant .cards .card:nth-child(2) form{
+    position: absolute;
+    top: 122px;
+    left: 3px;
+}
+.dashborad .contant .cards .card:nth-child(2) form label{
+    display: block;
+    font-size: 20px;
+    padding-left: 9px;
+    color: gray;
+    padding-bottom: 6px;
+}
+.dashborad .contant .cards .card:nth-child(2) form input{
+    margin-left: 9px;
+    font-size: 20px;
+    border-radius: 7px;
+    padding-left: 9px;
+    margin-bottom: 28px;
+    width: 253%;
+    height: 49px;
+    color: gray;
+    border: none;
+    border: 1px solid #3333;
+}
+.dashborad .contant .cards .card:nth-child(2) form input:last-child{
+    width: 201%;
+    background-color: #f0f4f8;
+}
+.dashborad .contant .cards .card:nth-child(2) button{
+    position: absolute;
+    top: 79%;
+    right: 42px;
+    border: none;
+    color: #008bff;
+    background-color: white;
+    font-size: 24px;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .header{
+    background-color: white;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .control{
+    position: relative;
+    top: 100px;
+    left: 4px;
+    margin-bottom: 16px;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .control:not(:last-child){
+    border-bottom: 1px solid #3333;
+}
+.dashborad .contant .cards .card:nth-child(3) .control h4{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 15px;
+
+}
+.dashborad .contant .cards .card:nth-child(3) .control p{
+    color: gray;
+    font-size: 16px;
+
+}
+.dashborad .contant .cards .card:nth-child(3) .control i{
+    position: absolute;
+    right: 24px;
+    top: 45px;
+    z-index: 1000;
+    color: #0075ff;
+    font-size: 20px;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .control:first-child h3{
+    position: absolute;
+    right: 14px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    top: 26%;
+    background-color: #0075ff;
+    border-radius: 6px;
+    color: white;
+    padding: 9px;
+}
+.dashborad .contant .cards .card:nth-child(3) .control-box .control:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 21%;
+    background-color: #0075ff;
+    height: 41px;
+    width: 101px;
+    border-radius: 21px;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .control-box .control:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 26%;
+    background-color: white;
+    height: 33px;
+    width: 33px;
+    border-radius: 21px;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .control:nth-child(2) i{
+    top: 33px;
+    right: 23px;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .control:last-child h3{
+    position: absolute;
+    right: 15px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    top: 30%;
+    background-color: #eee;
+    border-radius: 6px;
+    color: black;
+    padding: 9px;
+}
+
+/* Card 4 Start */
+.dashborad .contant .cards .card:nth-child(4) .header{
+    background-color: white;
+}
+
+
+
+.dashborad .contant .cards .card:nth-child(4) .social-box{
+    position: absolute;
+    top: 105px;
+    left: 14px;
+}
+
+.dashborad .contant .cards .card:nth-child(4) .social-box .box{
+    display: flex;
+    /* border: 1px solid #3333; */
+}
+
+.dashborad .contant .cards .card:nth-child(4) .social-box .box i{
+    font-size: 25px;
+    color: #888888;
+    background-color: #f6f6f6;
+    width: 64px;
+    height: 61px;
+    text-align: center;
+    padding-top: 19px;
+    margin-bottom: 29px;
+    padding-left: 9px;
+    padding-right: 8px;
+    border: 1px solid #3333;
+    border-radius: 6px 0px 0px 6px;
+    border-right: none;
+}
+
+.dashborad .contant .cards .card:nth-child(4) .social-box .box span{
+    width: 598px;
+    height: 61px;
+    background-color: #f6f6f6;
+    border: 1px solid #3333;
+    border-radius: 0px 6px 6px 0px;
+
+}
+
+.dashborad .contant .cards .card:nth-child(4) .social-box .box h3{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-weight: 500;
+    font-size: 20px;
+    left: 96px;
+    margin-top: 20px;
+    color: #888888;
+}
+
+
+
+/* Card 4 End */
+
+/* Card 5 Start */
+
+.dashborad .contant .cards .card:nth-child(5) .header{
+    background-color: white;
+    
+}
+.dashborad .contant .cards .card:nth-child(5) .check-box{
+  position: relative;
+  top: 119px;
+  left: 10px;
+
+}
+.dashborad .contant .cards .card:nth-child(5) .check-box div{
+    display: block;
+    font-size: 23px;
+    margin-bottom: 23px;
+
+}
+.dashborad .contant .cards .card:nth-child(5) .check-box input{
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+}
+.dashborad .contant .cards .card:nth-child(5) .check-box label{
+  display: inline;
+
+}
+
+/* Card 6 Start */
+
+.dashborad .contant .cards .card:nth-child(6) .header{
+    background-color: white;
+}
+.dashborad .contant .cards .card:nth-child(6) .choose-box{
+    position: relative;
+    top: 100px;
+    left: 3px;
+
+}
+
+.dashborad .contant .cards .card:nth-child(6) .choose-box div {
+    margin-bottom: 10px;
+}
+.dashborad .contant .cards .card:nth-child(6) .choose-box div input{
+    width: 20px;
+    height: 20px;
+}
+.dashborad .contant .cards .card:nth-child(6) .choose-box div label{
+    font-size: 25px;
+    padding-left: 6px;
+}
+.dashborad .contant .cards .card:nth-child(6) .boxes {
+    position: relative;
+    top: 150px;
+    left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #3333;
+    border-bottom: 1px solid #3333;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(6) .boxes .box{
+    text-align: center;
+    padding: 36px;
+    border: 1px solid #3333;
+    border-radius: 32px;
+    width: 181px;
+    height: 126px;
+    
+    
+}
+.dashborad .contant .cards .card:nth-child(6) .boxes .box.active{
+    border: 1px solid #0075ff;
+}
+.dashborad .contant .cards .card:nth-child(6) .boxes .box.active p,
+.dashborad .contant .cards .card:nth-child(6) .boxes .box.active i{
+    color:  #0075ff;
+}
+
+.dashborad .contant .cards .card:nth-child(6) .boxes .box p{
+font-size: 20px;
+}
+.dashborad .contant .cards .card:nth-child(6) .boxes .box i{
+    font-size: 20px;
+  
+}
+
+
+
+
+/* End Cards */
+
+
+/* End Large Card */
+
+
+
+/* End Contant */

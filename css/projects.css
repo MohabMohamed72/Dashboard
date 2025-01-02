@@ -1,0 +1,1016 @@
+/* Start Global Style */
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "Open Sans", serif;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    border: none;
+}
+textarea{
+    resize: none;
+}
+
+/* End Global Style */
+/* Start Dashborad */
+.dashborad{
+    position: relative;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: fit-content;
+    z-index: 1000;
+    
+}
+
+
+@media (max-width:4200px) {
+    .dashborad {
+        /* width: 3000px; */
+        height: 153vh;
+    }
+
+}
+@media (max-width:3356px) {
+    .dashborad {
+        /* width: 3000px; */
+        height: 153vh;
+    }
+}
+@media (max-width:2640px) {
+    .dashborad 
+    {
+        height: 160vh;
+    }
+
+}
+@media (max-width:1737px) {
+    .dashborad {
+        height: 287vh;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .dashborad {
+        height: 90vh;
+    }
+}
+
+
+
+@media (min-width:4200px) {
+    .dashborad {
+        height: 100vh;
+    }
+}
+@media (min-width:4900px) {
+    .dashborad {
+        height: 100vh;
+    }
+
+}
+
+/* @media (min-width:5300px) {
+    .dashborad {
+        
+    }
+
+} */
+
+
+
+
+
+@media (max-width:1840px){
+    .dashborad{
+        grid-template-columns: 150px 1fr;
+        
+    }
+
+    .dashborad .sidebar ul {
+        margin-left: -36px;
+    }
+   
+}
+
+
+/* End Dashborad */
+
+/* Start Sidebar */
+
+.dashborad .sidebar{
+    background-color: white;
+    box-shadow: 7px 10px 19px #ddd;
+    z-index: 1;
+    border-radius: 16px;
+
+}
+
+.dashborad .sidebar>h3{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.dashborad .sidebar>h3::before{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    top: 87%;
+    width: 141px;
+    left: 53px;
+    height: 3px;
+
+}
+.dashborad .sidebar>h3::after{
+    content: "";
+    position: absolute;
+    background-color: #333;
+    top: 70%;
+    width: 15px;
+    left: 105px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
+
+@media  (max-width:1840px) {
+    .dashborad .sidebar>h3::before,
+    .dashborad .sidebar>h3::after
+    {
+       display: none;
+    }
+}
+.dashborad .sidebar ul{
+    /* text-align: center; */
+}
+.dashborad .sidebar ul li{
+    margin-bottom: 20px;
+    width: 186px;
+    height: 37px;
+    border-radius: 8px;
+}
+
+@media  (max-width:1840px) {
+    .dashborad .sidebar ul li{
+        margin-bottom: 20px;
+        width: 137px;
+        height: 37px;
+        border-radius: 8px;
+    }
+}
+
+.dashborad .sidebar ul li.active,
+.dashborad .sidebar ul li:hover{
+    background-color: #f6f6f6;
+}
+
+.dashborad .sidebar ul li a{
+    color: #404340;
+    padding: 5px 3px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+
+.dashborad .sidebar ul li a span{
+    padding-left: 3px;
+    
+}
+.dashborad .sidebar ul li a i{
+    padding-top: 10px;
+    padding-left: 3px;
+}
+/* End Sidebar */
+
+/* Start Contant */
+.dashborad .contant{
+    background-color: #f1f5f9;
+    z-index: -1;
+    width: 100%;
+ 
+}
+.dashborad .contant .search{
+    background-color: white;
+    height: 80px;
+    position: relative;
+    width: 100%;
+}
+.dashborad .contant .search .search-box{
+    padding-top: 10px;
+    padding-left: 20px;
+    border: 1px solid #888888;
+    width: 236px;
+    height: 42px;
+    border-radius: 17px;
+    margin-left: 20px;
+    position: absolute;
+    top: 25%;
+}
+.dashborad .contant .search .search-box i{
+    color: #888888;
+}
+
+.dashborad .contant .search .search-box input{
+    border: none;
+}
+
+/* Start Cards */
+
+.dashborad .contant h3{
+    margin-left: 25px;
+    margin-top: 27px;
+    font-size: 45px;
+}
+
+.dashborad .contant .cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30% ;
+    grid-gap: 25px;
+}
+
+ @media (min-width:3360px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 25% 25% 25% 25%;
+        
+    }
+    
+}
+@media (min-width:4200px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        
+    }
+    
+}
+@media (min-width:4900px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px 740px 740px 740px 740px;
+        
+    }
+    
+}
+@media (min-width:5300px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px 740px 740px 740px 740px 740px;
+        
+    }
+    
+}
+@media (max-width:2640px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 740px 740px ;
+        
+    }
+    
+}
+@media (max-width:1737px) {
+    .dashborad .contant .cards{
+        grid-template-columns: 90% ;
+        
+    }
+    
+} 
+
+.dashborad .contant .cards .card{
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    margin-left: 30px;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+.dashborad .contant .cards .card:first-child .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:first-child .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:first-child .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:first-child  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:first-child  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:first-child  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:first-child  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:first-child  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:first-child  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:first-child  .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+
+/* Card 2 Start */
+
+.dashborad .contant .cards .card:nth-child(2) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(2) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(2) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(2)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(2)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(2)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(2)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(2)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(2)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(2) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* Card 3 Start */
+
+.dashborad .contant .cards .card:nth-child(3) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(3) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(3) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(3)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(3)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(3)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(3)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(3)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(3)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(3) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* Card 3 Start */
+
+.dashborad .contant .cards .card:nth-child(4) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(4) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(4) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(4)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(4)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(4)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(4)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(4)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(4)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(4) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* Card 3 Start */
+
+.dashborad .contant .cards .card:nth-child(5) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(5) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(5) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(5)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(5)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(5)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(5)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(5)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(5)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(5) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* Card 3 Start */
+
+.dashborad .contant .cards .card:nth-child(6) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(6) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(6) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(6)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(6)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(6)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(6)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(6)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(6)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(6) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* Card 3 Start */
+
+.dashborad .contant .cards .card:nth-child(7) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(7) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(7) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(7)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(7)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(7)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(7)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(7)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(7)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(7) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* Card 3 Start */
+
+.dashborad .contant .cards .card:nth-child(8) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(8) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(8) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(8)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(8)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(8)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(8)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(8)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(8)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(8) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* Card 3 Start */
+
+.dashborad .contant .cards .card:nth-child(9) .header p{
+    width: fit-content;
+    margin: 0;
+    color: gray;
+}
+
+.dashborad .contant .cards .card:nth-child(9) .header .title{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.dashborad .contant .cards .card:nth-child(9) .header .title h1{
+    width: fit-content;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dashborad .contant .cards .card:nth-child(9)  .imgs img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-right: -19px;
+}
+
+.dashborad .contant .cards .card:nth-child(9)  .text {
+    border-top: 1px solid #3333;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    border-bottom: 1px solid #3333;
+    margin-top: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dashborad .contant .cards .card:nth-child(9)  .text p{
+    width: fit-content;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.dashborad .contant .cards .card:nth-child(9)  .rating{
+    position: relative;
+    margin-top: 30px;
+    background-color: #eee;
+    border-radius: 14px;
+    height: 9px;
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 22px;
+}
+.dashborad .contant .cards .card:nth-child(9)  .rating span{
+    position: absolute;
+    background-color: red;
+    border-radius: 14px;
+    height: 9px;
+    width: 20%;
+    /* margin-left: 20px; */
+    left: 0;
+}
+
+
+.dashborad .contant .cards .card:nth-child(9)  .money {
+    position: relative;
+}
+.dashborad .contant .cards .card:nth-child(9) .money p{
+    position: absolute;
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    top: -56px;
+    right: 10px;
+}
+/* Card 2 End */
+/* End Cards */
+
+
+/* End Large Card */
+
+
+
+/* End Contant */
