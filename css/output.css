@@ -826,6 +826,14 @@ video {
   height: fit-content;
 }
 
+.h-\[20\%\] {
+  height: 20%;
+}
+
+.h-\[10\%\] {
+  height: 10%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1279,6 +1287,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1469,6 +1481,20 @@ video {
 
   .max-sm\:gap-4 {
     gap: 1rem;
+  }
+
+  .max-sm\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .max-sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .max-sm\:px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 

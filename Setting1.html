@@ -17,7 +17,7 @@
     </head>
     <body>
 
-        <div class="dashborad flex h-[100vh]">
+        <div class="dashborad flex ">
 
             <div class="sidebar w-fit flex flex-col items-center shadow-md shadow-black  max-sm:hidden">
                 <div class="mt-2 relative">
@@ -57,7 +57,25 @@
 
 
 
-            <div class="contant  flex flex-col w-full z-10">
+            <div class="contant  flex flex-col w-full z-10 h-fit">
+
+                <div class="">
+                    <ul class="flex justify-between px-5 bg-blue-300 py-5 text-white">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Setting1.html">Setting</a>
+                        </li>
+                        <li>
+                            <a href="Profile1.html">Profile</a>
+                        </li>
+                        <li>
+                            <a href="projects1.html">Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="search p-5 col-span-3">
                     <div class="search-box ">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -65,12 +83,12 @@
                     </div>
                 </div>
                 
-                <div class="bg-blue-50 w-full px-5 h-[100vh] ">
+                <div class="bg-blue-50 w-full px-5 h-fit pb-10 ">
                 <h3 class="pt-2 font-[500] text-[25px]">Setting</h3>
 
                 <div class="cards w-full grid gap-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  mt-10">
 
-                    <div class=" card w-full ">
+                    <div class=" card w-full pb-4 ">
                         <div class="header w-full">
                             <h2 class="header-title">Site Control</h2>
                             <p class="text-gray-500">Control The Website If There Is A Maintance</p>
@@ -90,7 +108,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full mt-5 px-3 h-full">
+                        <div class="w-full mt-5 px-3 ">
                             <textarea class="w-full h-[50%] bg-transparent border-2 rounded-md p-2" name="" id="" placeholder="Close Message Content"></textarea>
                         </div>
                     </div>
@@ -118,7 +136,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="card">
+                    <div class="card pb-4">
                         <div class="header">
                             <h2 class="header-title">Site Control</h2>
                             <p class="text-gray-500">Control The Website If There Is A Maintance</p>
@@ -159,7 +177,7 @@
                              
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card pb-4">
                         <div class="header">
                             <h2 class="header-title">Social Info</h2>
                             <p class="text-gray-500">Social Media Information</p>
@@ -223,7 +241,7 @@
                         </div>
                     </div>
 
-                  <div class="card ">
+                  <div class="card pb-4">
                         <div class="header">
                             <h2 class="header-title">Backup Manger </h2>
                             <p class="text-gray-500">Control Backup Time And Location</p>
