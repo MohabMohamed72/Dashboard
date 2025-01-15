@@ -31,185 +31,103 @@ textarea{
 
 /* End Global Style */
 /* Start Dashborad */
+
 .dashborad{
-    position: relative;
-    display: grid;
-    grid-template-columns: 250px 1fr;
-    height: 312vh;
-    z-index: 1000;
+    display: flex;
     
 }
-
-
-@media (max-width:4200px) {
-    .dashborad {
-        /* width: 3000px; */
-        height: 153vh;
-    }
-
-}
-@media (max-width:3356px) {
-    .dashborad {
-        /* width: 3000px; */
-        height: 153vh;
-    }
-}
-@media (max-width:2640px) {
-    .dashborad 
-    {
-        height: 160vh;
-    }
-
-}
-@media (max-width:1737px) {
-    .dashborad {
-        height: 287vh;
-    }
-
-}
-
-@media (max-width:1024px) {
-    .dashborad {
-        height: 90vh;
-    }
-}
-
-
-
-@media (min-width:4200px) {
-    .dashborad {
-        height: 100vh;
-    }
-}
-@media (min-width:4900px) {
-    .dashborad {
-        height: 100vh;
-    }
-
-}
-
-/* @media (min-width:5300px) {
-    .dashborad {
-        
-    }
-
-} */
-
-
-
-
-
-@media (max-width:1840px){
-    .dashborad{
-        grid-template-columns: 150px 1fr;
-        
-    }
-
-    .dashborad .sidebar ul {
-        margin-left: -36px;
-    }
-   
-}
-
 
 /* End Dashborad */
 
 /* Start Sidebar */
 
 .dashborad .sidebar{
+    width: fit-content;
+}
+
+.dashborad .sidebar{
     background-color: white;
     box-shadow: 7px 10px 19px #ddd;
     z-index: 1;
     border-radius: 16px;
+    height: 100vh;
+    
 }
 
 .dashborad .sidebar>h3{
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 20px;
     position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
 }
 
 .dashborad .sidebar>h3::before{
     content: "";
     position: absolute;
     background-color: #333;
-    top: 87%;
-    width: 141px;
-    left: 53px;
-    height: 3px;
+    top: 100%;
+    width: 100%;
+    height: 2px;
 
 }
 .dashborad .sidebar>h3::after{
     content: "";
     position: absolute;
     background-color: #333;
-    top: 70%;
-    width: 15px;
-    left: 105px;
-    height: 15px;
+    transform: translate(-50% , -50%);
+    top:100% ;
+    left: 50%;
+    width: 10px;
+    height: 10px;
     border: 2px solid white;
     border-radius: 50%;
 
 }
 
-
-@media  (max-width:1840px) {
-    .dashborad .sidebar>h3::before,
-    .dashborad .sidebar>h3::after
-    {
-       display: none;
-    }
+.dashborad .sidebar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
-.dashborad .sidebar ul{
-    /* text-align: center; */
-}
-.dashborad .sidebar ul li{
-    margin-bottom: 20px;
-    width: 186px;
-    height: 37px;
-    border-radius: 8px;
+.dashborad .sidebar ul li {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-@media  (max-width:1840px) {
-    .dashborad .sidebar ul li{
-        margin-bottom: 20px;
-        width: 137px;
-        height: 37px;
-        border-radius: 8px;
-    }
+.dashborad .sidebar ul li a{
+  display: flex;
+  align-items: center;
 }
+
 
 .dashborad .sidebar ul li.active,
 .dashborad .sidebar ul li:hover{
     background-color: #f6f6f6;
 }
 
+
 .dashborad .sidebar ul li a{
     color: #404340;
-    padding: 5px 3px;
     font-weight: 400;
-    padding-left: 10px;
-    margin-left: 0;
 }
 
-
-.dashborad .sidebar ul li a span{
-    padding-left: 3px;
-    
-}
-.dashborad .sidebar ul li a i{
-    padding-top: 10px;
-    padding-left: 3px;
-}
 /* End Sidebar */
 
+
+
+
 /* Start Contant */
+
 .dashborad .contant{
     background-color: #f1f5f9;
     z-index: -1;
     width: 100%;
 }
+
 .dashborad .contant .search{
     background-color: white;
     height: 80px;
@@ -239,106 +157,61 @@ textarea{
 
 .dashborad .contant h3{
     margin-left: 25px;
-    margin-top: 27px;
-    font-size: 45px;
+    margin-top: 25px;
+    font-size: 35px;
 }
+
 
 .dashborad .contant .cards{
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: 740px 740px 740px;
-    /* grid-template-rows: 600px  600px 600px 600px; */
-    grid-gap: 25px;
-}
-
-@media (min-width:3360px) {
-    .dashborad .contant .cards{
-        grid-template-columns: 740px 740px 740px 740px;
-        
-    }
-    
-}
-@media (min-width:4200px) {
-    .dashborad .contant .cards{
-        grid-template-columns: 740px 740px 740px 740px 740px;
-        
-    }
-    
-}
-@media (min-width:4900px) {
-    .dashborad .contant .cards{
-        grid-template-columns: 740px 740px 740px 740px 740px 740px;
-        
-    }
-    
-}
-@media (min-width:5300px) {
-    .dashborad .contant .cards{
-        grid-template-columns: 740px 740px 740px 740px 740px 740px 740px;
-        
-    }
-    
-}
-@media (max-width:2640px) {
-    .dashborad .contant .cards{
-        grid-template-columns: 740px 740px ;
-        
-    }
-    
-}
-@media (max-width:1737px) {
-    .dashborad .contant .cards{
-        grid-template-columns: 740px ;
-        
-    }
-    
+    /* display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 25px; */
+    display: flex;
+    margin-left: 20px;
 }
 
 .dashborad .contant .cards .card{
     background-color: white;
-    padding: 0 10px 10px 10px;
-    margin-left: 30px;
-    width: 707px;
-    height: 600px;
-    position: relative;
-    border-radius: 6px;
+    width: auto;
+    border-radius: 10px;
 }
 
 
 
 .dashborad .contant .cards .card .header{
-    position: absolute;
-    position: absolute;
-    background-color: #eee;
-    width: 100%;
-    height: 193px;
-    left: 0;
-    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  
+}
+
+.dashborad .contant .cards .card .header .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 .dashborad .contant .cards .card .header h2{
     margin: 0;
     padding: 0;
-    padding-left: 10px;
-    padding-top: 14px;
-    font-size: 30px;
+    font-size: 25px;
 }
+
 .dashborad .contant .cards .card .header p{
     margin: 0;
     padding: 0;
-    padding-left: 17px;
-    padding-top: 4px;
     color: gray;
     font-size: 20px;
-}
+} 
 
-.dashborad .contant .cards .card:first-child .header img{
-    position: absolute;
-    top: 14px;
-    right: 16px;
+.dashborad .contant .cards .card:first-child .header .img1{
+padding: 10px;
 
 }
-
+/* 
 .dashborad .contant .cards .card:first-child img:nth-child(2){
     width: 60px;
     height: 60px;
@@ -347,7 +220,7 @@ textarea{
     position: absolute;
     top: 27%;
     left: 7%;
-}
+} */
 
 .dashborad .contant .cards .card:first-child ul{
     position: relative;
@@ -391,7 +264,7 @@ textarea{
     color: white;
     font-weight: 600;
 }
-
+ */
 
 .dashborad .contant .cards .card:nth-child(2) .header{
     background-color: white;

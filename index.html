@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Am Robotics</title>
 
-        <link rel="stylesheet" href="css/page.css">
+        <!-- <link rel="stylesheet" href="css/page.css"> -->
+        <link rel="stylesheet" href="css/output.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/Normlizer.css">
 
@@ -15,331 +16,472 @@
 
     </head>
     <body>
-        <div class="dashborad">
-            <div class="sidebar">
-                <h3>Am Academy</h3>
-                <ul class="">
-                    <li class="active">
-                        <a href="index.html">
+
+        <div class="dashborad flex">
+
+            <div class="sidebar w-fit flex flex-col items-center shadow-md shadow-black  max-sm:hidden">
+                <div class="mt-2 relative">
+                    <h3 class="pb-2 font-[500]">Am Academy</h3>
+                    <span class="absolute left-0 bottom-0 w-full bg-black h-[2px] "></span>
+                    <span class="absolute left-1/2 -translate-x-1/2 top-full w-[10px] h-[10px] -translate-y-1/2 bg-black rounded-full border-2 border-white "></span>
+
+                </div>
+
+                <ul class="mt-2">
+                    <li class="active p-3 hover:bg-gray-200 transition-all duration-700">
+                        <a href="index.html" class="flex gap-2">
                             <i class="fa-solid fa-chart-simple fa-fw "></i>
                             <span>Dashborad</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="setting.html">
+                    <li class="p-3 hover:bg-gray-200 transition-all duration-700">
+                        <a href="setting.html" class="flex gap-2">
                             <i class="fa-solid fa-gear fa-fw "></i>
                             <span>Settings</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="profile.html">
+                    <li class="p-3 hover:bg-gray-200 transition-all duration-700">
+                        <a href="profile.html"class="flex gap-2">
                             <i class="fa-solid fa-chalkboard fa-fw "></i>
                             <span>Profile</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="projects.html">
+                    <li class="p-3 hover:bg-gray-200 transition-all duration-700">
+                        <a href="projects.html" class="flex gap-2">
                             <i class="fa-solid fa-list-check fa-fw"></i>
                             <span>Projects</span>
                         </a>
                     </li>
-                 
                 </ul>
             </div>
-            <div class="contant">
-                <div class="search">
+
+
+
+            <div class="contant -z-10 flex flex-col w-full">
+                <div class="search p-5 col-span-3">
                     <div class="search-box ">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="Type A Keyword">
                     </div>
                 </div>
-                <h3>Dashborad</h3>
-                <div class="cards">
-                    <div class="card">
-                        <div class="header">
-                            <h2>Welcome</h2>
-                            <p>Mohab</p>
-                            <img src="imgs/welcome (1).png" alt="">
+                
+                <div class="bg-blue-50 w-full px-5 ">
+                <h3 class="pt-2 font-[500] text-[25px]">Dashborad</h3>
+
+                <div class="cards w-full grid gap-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  mt-10">
+
+                    <div class=" bg-white  w-full h-[420px] ">
+                        <div class=" bg-gray-200 rounded-md flex justify-between gap-10 p-3">
+                            <div class="text flex flex-col items-center p-3">
+                                <h2 class="text-[25px] font-bold">Welcome</h2>
+                                <p class="text-[15px] text-gray-500">Mohab</p>
+                            </div>
+                            <div>
+                                <img class="w-[200px]" src="imgs/welcome (1).png" alt="" >
+                            </div>
                         </div>
-                        <img src="imgs/team-04.png" alt="">
-                        <ul>
-                            <li class="font-bold">Mohab Mohamed</li>
-                            <li class="font-bold">80</li>
-                            <li class="font-bold">$8500</li>
-                            <li class="text-stone-500">Developer</li>
-                            <li class="text-stone-500" >Projects</li>
-                            <li class="text-stone-500">Earned</li>
-                        </ul>
-                        <button>profile</button>
-                    </div>
-                    <div class="card">
-                        <div class="header">
-                            <h2>Quick Draft</h2>
-                            <p>Write A Draft For Your Ideas</p>
+
+                        <img class="size-10 -translate-y-5 translate-x-4 rounded-full border-8 border-white " src="imgs/team-04.png" alt="">
+                        
+                        <hr class="mb-3"/>
+                        <div class="flex justify-around">
+
+                            <div class="flex flex-col items-center gap-2">
+                                <p class="font-bold">Mohab Mohamed</p>
+                                <p class="text-stone-500">Developer</p >
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                                <p class="font-bold">80</p>
+                                <p class="text-stone-500">Projects</p>
+                            </div>
+                            <div class="flex flex-col items-center gap-2">
+                                <p class="font-bold">$8500</p>
+                                <p class="text-stone-500">Earned</p>
+                            </div >
+
                         </div>
-                        <input type="text"placeholder="Enter Title">
-                        <textarea placeholder="Enter Your Thoughts"></textarea>
-                        <button>Save</button>
-                    </div>
-                    <div class="card">
-                        <div class="header">
-                            <h2>Welcome</h2>
-                            <p>Mohab</p>
-                        </div>
-                        <div class="charts">
-                            <div class="icons">
-                                <i class="fa-solid fa-dollar-sign"></i>
-                                <i class="fa-solid fa-code "></i>
-                                <i class="fa-solid fa-user "></i>
-                            </div>
-                            <div class="infos">
-                                <p>money</p>
-                                <p>Projects</p>
-                                <p>Team</p>
-                            </div>
-                            <div  class="numbers">
-                                <p >$20.000</p>
-                                <p >24</p>
-                                <p >12</p>
-                            </div>
-                            <div  class="rating">
-                               <span></span>
-                               <span></span>
-                               <span></span>
-                            </div>
+                        <hr class="mt-3"/>
+
+                        <div class="flex justify-end mr-2 mt-10">
+                            <button class="mt-10 bg-blue-500 p-3 text-white rounded-md ">profile</button>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="header">
-                            <h2>Tickets Statics</h2>
-                            <p>Everthing About Support Tickets</p>
+
+                     <div class="card bg-white  w-full">
+                        <div class="header rounded-md flex p-3  flex-col  ">
+                            <h2 class="text-[25px] font-bold">Quick Draft</h2>
+                            <p class="text-[15px] text-gray-500 mt-2">Write A Draft For Your Ideas</p>
                         </div>
-                        <div class="news">
-                            <div>
-                                <i class="fa-regular fa-newspaper"></i>
-                                <h3>2500</h3>
-                                <p>Total</p>
+                        <div class="w-full px-3">
+                            <input type="text"placeholder="Enter Title" class="bg-gray-200 w-full px-2 rounded-sm py-2">
+                        </div>
+                        <div class="w-full px-3 h-[50%]">
+                            <textarea placeholder="Enter Your Thoughts" class="w-full rounded-sm h-full px-2 mt-2 bg-gray-200"></textarea>
+                        </div>
+                        <div class="flex justify-end mr-2 mt-10">
+                            <button class="mt-1 bg-blue-500 p-3 text-white rounded-md ">Save</button>
+                        </div>
+                    </div>
+
+                   <div class="card bg-white  w-full">
+                        <div class="header rounded-md flex p-3  flex-col ">
+                            <h2 class="text-[25px] font-bold">Welcome</h2>
+                            <p class="text-[15px] text-gray-500 mt-2">Mohab</p>
+                        </div>
+
+                        <div class="charts flex flex-col gap-10 mt-10 ml-2">
+                            <div class="flex ">
+                                <i class="fa-solid fa-dollar-sign p-6 text-[25px] text-blue-500 bg-blue-100 "></i>
+                                <div class="flex flex-col mt-3 w-full px-3">
+                                    <p class="text-gray-500">money</p>
+                                    <p class="font-[500] mb-1">$20.000</p>
+                                    <div class="mt-1 relative">
+                                        <span class="w-full absolute h-[5px] bg-blue-200 "></span>
+                                        <span class="w-[70%] absolute h-[5px] bg-blue-400 "></span>
+                                    </div>
+                                </div>
+                            </div >
+                            <div class="icons flex ">
+                                <i class="fa-solid fa-user  p-6 text-[25px] text-orange-500 bg-orange-100 "></i>
+                               <div class="flex flex-col mt-3 w-full px-3">
+
+                                   <p class="text-gray-500">Projects</p>
+                                   <p class="font-[500] mb-1" >24</p>
+                                   <div class="mt-1 relative">
+                                       <span class="w-full absolute h-[5px] bg-orange-200 "></span>
+                                       <span class="w-[60%] absolute h-[5px] bg-orange-400 "></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-solid fa-spinner"></i>
-                                <h3>500</h3>
-                                <p>Pending</p>
+                            <div class="infos flex">
+                                <i class="fa-solid fa-code  p-6 text-[25px]  text-green-500 bg-green-100 "></i>
+                              <div class="flex flex-col mt-3 w-full px-3">
+                                  <p class="text-gray-500">Team</p>
+                                  <p class="font-[500] mb-1" >12</p>
+                                  <div class="mt-1 relative">
+                                      <span class="w-full absolute h-[5px] bg-green-200 "></span>
+                                      <span class="w-[20%] absolute h-[5px] bg-green-400 "></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <i class="fa-regular fa-circle-check"></i>
-                                <h3>1900</h3>
-                                <p>Closed</p>
+                          
+                        </div>
+                    </div>
+                 <div class="card bg-white  w-full">
+                        <div class="header rounded-md flex p-3  flex-col">
+                            <h2 class="text-[25px] font-bold">Tickets Statics</h2>
+                            <p class="text-[15px] text-gray-500 mt-2">Everthing About Support Tickets</p>
+                        </div>
+                        <div class="news grid grid-cols-2 gap-2 mt-5 pb-5">
+                            <div class="ml-auto mr-auto gap-2 flex flex-col items-center border-2 border-gray-300 rounded-md p-5 w-[80%]">
+                                <i class="fa-regular fa-newspaper text-[25px] w-6 text-orange-500"></i>
+                                <h3 class="font-[700] text-[20px]">2500</h3>
+                                <p class="text-gray-500">Total</p>
                             </div>
-                            <div>
-                                <i class="fa-regular fa-circle-xmark"></i>
-                                <h3>100</h3>
-                                <p>Deleted</p>
+                            <div class="ml-auto mr-auto gap-2 flex flex-col items-center border-2 border-gray-300 rounded-md p-5 w-[80%]">
+                                <i class="fa-solid fa-spinner text-[25px] w-6 text-blue-500"></i>
+                                <h3 class="font-[700] text-[20px]">500</h3>
+                                <p class="text-gray-500">Pending</p>
+                            </div>
+                            <div class="ml-auto mr-auto gap-2 flex flex-col items-center border-2 border-gray-300 rounded-md p-5 w-[80%]">
+                                <i class="fa-regular fa-circle-check text-[25px] w-6 text-green-400"></i>
+                                <h3 class="font-[700] text-[20px]">1900</h3>
+                                <p class="text-gray-500">Closed</p>
+                            </div>
+                            <div class="ml-auto mr-auto gap-2 flex flex-col items-center border-2 border-gray-300 rounded-md p-5 w-[80%]">
+                                <i class="fa-regular fa-circle-xmark text-[25px] w-6 text-red-600"></i>
+                                <h3 class="font-[700] text-[20px]">100</h3>
+                                <p class="text-gray-500">Deleted</p>
                             </div>
                          </div>
                     </div>
-                    <div class="card">
-                        <div class="header">
-                            <h2>Latest News</h2>
-                        </div>
-                        <div class="news-box">
-                            <div class="new">
-                                <img src="imgs/news-01.png" alt="">
-                                <h3>Created SASS Section</h3>
-                                <p>New Sass Examples</p>
-                                <span>3 Days Ago</span>
+
+                        <div class="card bg-white  w-full">
+                            <div class="header rounded-md flex p-3  flex-col">
+                                <h2 class="text-[25px] font-bold">Latest News</h2>
                             </div>
-                            <div class="new">
-                                <img src="imgs/news-02.png" alt="">
-                                <h3>Changed The Design</h3>
-                                <p>A Brand New Website</p>
-                                <span>5 Days Ago</span>
+                        <div class="news-box flex flex-col ml-4 gap-5 mt-3">
+
+                            <div class="new flex ">
+                                <img class="w-[100px] rounded-md " src="imgs/news-01.png" alt="">
+
+                                <div class="flex flex-col ml-3 gap-3 ">
+                                    <h3 class="font-bold">Created SASS Section</h3>
+                                    <p class="text-gray-500">New Sass Examples</p>
+                                </div>
+                                <div class=" ml-auto mr-4 ">
+                                    <p class="bg-gray-100 p-1 rounded-md">3 Days Ago</p>   
+                                </div>
+                                
                             </div>
-                            <div class="new">
-                                <img src="imgs/news-03.png" alt="">
-                                <h3>Team Increased</h3>
-                                <p>3 Developer Joined</p>
-                                <span>7 Days Ago</span>
+
+                            <div class="new flex">
+                                <img  class="w-[100px] rounded-md " src="imgs/news-02.png" alt="">
+                                <div class="flex flex-col ml-3 gap-3">
+
+                                    <h3 class="font-bold">Changed The Design</h3>
+                                    <p class="text-gray-500">A Brand New Website</p>
+                                </div>
+                                <div class="ml-auto mr-4">
+                                    <span class="bg-gray-100 p-1 rounded-md">5 Days Ago</span>
+                                </div>
                             </div>
-                            <div class="new">
-                                <img src="imgs/news-04.png" alt="">
-                                <h3>Added Paymednt Getway</h3>
-                                <p>Many New Payment Getway Added</p>
-                                <span>9 Days Ago</span>
+                            <div class="new flex">
+                                <img class="w-[100px] rounded-md " src="imgs/news-03.png" alt="">
+                                <div class="flex flex-col ml-3 gap-3">
+
+                                    <h3 class="font-bold">Team Increased</h3>
+                                    <p class="text-gray-500">3 Developer Joined</p>
+                                </div>
+                                <div class="ml-auto mr-4">
+
+                                    <span class="bg-gray-100 p-1 rounded-md">7 Days Ago</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="header">
-                            <h2>Latest Tasks</h2>
-                        </div>
-                        <div class="task-box">
-                            <div class="box">
-                                <h4>Record One New Video</h4>
-                                <p>Record Python Video</p>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </div>
-                            <div class="box">
-                                <h4>Record One New Video</h4>
-                                <p>Record Python Video</p>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </div>
-                            <div class="box">
-                                <h4>Record One New Video</h4>
-                                <p>Record Python Video</p>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </div>
-                            <div class="box">
-                                <h4><del>Record One New Video</del></h4>
-                                <p><del>Record Python Video</del></p>
-                                <i class="fa-regular fa-trash-can"></i>
-                            </div>
-                            <div class="box">
-                                <h4>Record One New Video</h4>
-                                <p>Record Python Video</p>
-                                <i class="fa-regular fa-trash-can"></i>
+                            <div class="new flex">
+                                <img class="w-[100px] rounded-md " src="imgs/news-04.png" alt="">
+                                <div class="flex flex-col ml-3 gap-3">
+                                    <h3 class="font-bold">Added Paymednt Getway</h3>
+                                    <p class="text-gray-500">Many New Payment Getway Added</p>
+                                </div>
+                                <div class="ml-auto mr-4">
+
+                                    <span class="bg-gray-100 p-1 rounded-md">9 Days Ago</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                     <div class="card">
                         <div class="header">
-                            <h2>Top Search Items</h2>
+                            <h2 class="header-title">Latest Tasks</h2>
                         </div>
-                        <div class="search-box">
-                            <div class="search-header">
+                        <div class="task-box flex flex-col px-5">
+                            <div class="box flex justify-between">
+                                <div>
+                                    <h4 class="font-[500] mb-1">Record One New Video</h4>
+                                     <p class="text-gray-500">Record Python Video</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can text-gray-500"></i>
+                            </div>
+                            <hr class="mt-2 mb-2"/>
+                            
+                            <div class="box flex justify-between">
+                                <div>
+                                    <h4 class="font-[500] mb-1">Record One New Video</h4>
+                                     <p class="text-gray-500">Record Python Video</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can text-gray-500"></i>
+                            </div>
+                            <hr class="mt-2 mb-2"/>
+                            
+                            <div class="box flex justify-between">
+                                <div>
+                                    <h4 class="font-[500] mb-1">Record One New Video</h4>
+                                     <p class="text-gray-500">Record Python Video</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can text-gray-500"></i>
+                            </div>
+                            <hr class="mt-2 mb-2"/>
+                            
+                            <div class="box flex justify-between">
+                                <div>
+                                    <h4 class="font-[500] mb-1">Record One New Video</h4>
+                                     <p class="text-gray-500">Record Python Video</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can text-gray-500"></i>
+                            </div>
+                            <hr class="mt-2 mb-2"/>
+                            
+                            <div class="box flex justify-between">
+                                <div>
+                                    <h4 class="font-[500] mb-1">Record One New Video</h4>
+                                     <p class="text-gray-500">Record Python Video</p>
+                                </div>
+                                <i class="fa-regular fa-trash-can text-gray-500"></i>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                 <div class="card">
+                        <div class="header">
+                            <h2 class="header-title">Top Search Items</h2>
+                        </div>
+
+                        <div class="search-box flex flex-col gap-7 px-1 pb-5">
+
+                            <div class="search-header flex justify-between px-3 text-gray-500">
                                 <p>Keyword</p>
                                 <p>Search Count</p>
                             </div>
-                            <div class="search-keys">
+                            <div class="flex justify-between px-3 ">
                                 <p>programming</p>
-                                <p>code</p>
-                                <p>logic</p>
-                                <p>php</p>
-                                <p>JavaScript</p>
-                                <p>Desgin</p>
-                            </div>
-                            <div class="search-values">
                                 <p>100</p>
+                            </div>
+                            <div class="flex justify-between px-3 ">
+                                <p>code</p>
                                 <p>50</p>
+                            </div>
+                            <div class="flex justify-between px-3 ">
+                                <p>logic</p>
                                 <p>20</p>
+                            </div>
+                            <div class="flex justify-between px-3 ">
+                                <p>php</p>
                                 <p>10</p>
+                            </div>
+                            <div class="flex justify-between px-3 ">
+                                <p>JavaScript</p>
                                 <p>5</p>
+                            </div>
+                            <div class="flex justify-between px-3 ">
+                                <p>Desgin</p>
                                 <p>23</p>
                             </div>
+
+                            
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="header">
-                            <h2>Latest Uploads</h2>
+
+                    <div class="card bg-white  w-full">
+                        <div class="header rounded-md flex p-3  flex-col">
+                            <h2 class="text-[25px] font-bold">Latest News</h2>
+                        </div>
+                    <div class="news-box flex flex-col ml-4 gap-5 mt-3">
+
+                        <div class="new flex ">
+                            <img class="w-[40px] rounded-md " src="imgs/Logos/avi.svg" alt="">
+
+                            <div class="flex flex-col ml-3 gap-3 ">
+                                <h3 class="font-bold">Admin</h3>
+                                <p class="text-gray-500">Developer</p>
+                            </div>
+                            <div class=" ml-auto mr-4 ">
+                                <p class="bg-gray-100 p-1 rounded-md">3 Days Ago</p>   
+                            </div>
+                            
                         </div>
 
-                        <div class="search-box">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                        <div class="new flex">
+                            <img  class="w-[40px] rounded-md " src="imgs/Logos/dll.svg" alt="">
+                            <div class="flex flex-col ml-3 gap-3">
+
+                                <h3 class="font-bold">Mohab</h3>
+                                <p class="text-gray-500">Developer</p>
                             </div>
-                            <div class="imgs">
-                                <img src="imgs/Logos/avi.svg" alt="">
-                                <img src="imgs/Logos/dll.svg" alt="">
-                                <img src="imgs/Logos/eps.svg" alt="">
-                                <img src="imgs/Logos/pdf.svg" alt="">
-                                <img src="imgs/Logos/png.svg" alt="">
-                                <img src="imgs/Logos/psd.svg" alt="">
+                            <div class="ml-auto mr-4">
+                                <span class="bg-gray-100 p-1 rounded-md">5 Days Ago</span>
                             </div>
-                            <div class="search-header">
-                                <p>Admin</p>
-                                <p>Mohab</p>
-                                <p>Mohab</p>
-                                <p>Mohab</p>
-                                <p>Mohab</p>
-                                <p>Mohab</p>
+                        </div>
+                        <div class="new flex">
+                            <img class="w-[40px] rounded-md " src="imgs/Logos/eps.svg" alt="">
+                            <div class="flex flex-col ml-3 gap-3">
+
+                                <h3 class="font-bold">Mohab</h3>
+                                <p class="text-gray-500">Desgin</p>
                             </div>
-                            <div class="search-keys">
-                                <p>programming</p>
-                                <p>code</p>
-                                <p>logic</p>
-                                <p>php</p>
-                                <p>JavaScript</p>
-                                <p>Desgin</p>
+                            <div class="ml-auto mr-4">
+
+                                <span class="bg-gray-100 p-1 rounded-md">7 Days Ago</span>
                             </div>
-                            <div class="search-values">
-                                <p>100</p>
-                                <p>50</p>
-                                <p>20</p>
-                                <p>10</p>
-                                <p>5</p>
-                                <p>23</p>
+                        </div>
+                        <div class="new flex">
+                            <img class="w-[40px] rounded-md " src="imgs/Logos/pdf.svg" alt="">
+                            <div class="flex flex-col ml-3 gap-3">
+                                <h3 class="font-bold">Mohab</h3>
+                                <p class="text-gray-500">Programming</p>
+                            </div>
+                            <div class="ml-auto mr-4">
+
+                                <span class="bg-gray-100 p-1 rounded-md">9 Days Ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="header-title">Latest Project Progress</h2>
+                        </div>
+                        <div class="project-progress flex relative gap-3 px-3 mt-5">
+                            <div class="lines flex flex-col gap-3">
+                                <span class="bg-blue-600 rounded-full size-6 border-2 border-white"></span>
+                                <span class="bg-blue-500 rounded-full size-6 border-2 border-white"></span>
+                                <span class="bg-blue-400 rounded-full size-6 border-2 border-white"></span>
+                                <span class="bg-blue-300 rounded-full size-6 border-2 border-white"></span>
+                                <span class="bg-blue-200 rounded-full size-6 border-2 border-white"></span>
+                            </div>
+                            <div class="progress flex flex-col gap-3">
+                                <p class="text-[20px]">Go To The Project </p>
+                                <p class="text-[20px]">Started The Project</p>
+                                <p class="text-[20px]">The Project About To Finish</p>
+                                <p class="text-[20px]">Tested The Project </p>
+                                <p class="text-[20px]">Finish The Project And Get The Money </p>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="header">
-                            <h2>Latest Project Progress</h2>
+                            <h2 class="header-title">Reminders</h2>
                         </div>
-                        <div class="project-progress">
-                            <div class="progress">
-                                <p>Go To The Project </p>
-                                <p>Started The Project</p>
-                                <p>The Project About To Finish</p>
-                                <p>Tested The Project </p>
-                                <p>Finish The Project And Get The Money </p>
+
+                       <div class="flex mt-3 pb-10">
+
+                        <div class="pl-5 flex flex-col gap-9 mt-2">
+                            <div class="size-5 bg-green-500 rounded-full border-r-2   border-green-500"></div>
+                            <div class="size-5 bg-orange-500 rounded-full border-r-2  border-orange-500"></div>
+                            <div class="size-5 bg-blue-500 rounded-full border-r-2    border-blue-500"></div>
+                            <div class="size-5 bg-red-500 rounded-full        border-red-500"></div>
+                        </div>
+
+                        <div class="Reminders px-5 flex flex-col gap-3">
+                            <div class="flex flex-col gap-2 border-l-2 border-green-500 pl-5">
+                                <h4 class="font-bold">Check My Task List</h4>
+                                <p class="text-gray-500">1/10/2024 - 12:00pm</p>
+                            </div>
+                            <div class="flex flex-col gap-2 border-l-2 border-orange-500 pl-5">
+                                <h4 class="font-bold">Check My Task List</h4>
+                                <p class="text-gray-500">1/10/2024 - 12:00pm</p>
+                            </div>
+                            <div class="flex flex-col gap-2 border-l-2 border-blue-500 pl-5">
+                                <h4 class="font-bold" >Check My Task List</h4>
+                                <p class="text-gray-500">1/10/2024 - 12:00pm</p>
+                            </div>
+                            <div class="flex flex-col gap-2 border-l-2 border-red-500 pl-5">
+                                <h4 class="font-bold">Check My Task List</h4>
+                                <p class="text-gray-500">1/10/2024 - 12:00pm</p>
                             </div>
                         </div>
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+
+                       </div>
                     </div>
                     <div class="card">
                         <div class="header">
-                            <h2>Reminders</h2>
+                            <h2 class="header-title">Latest Posts</h2>
                         </div>
-                        <div class="Reminders">
+                        <div class="person px-5 flex items-center gap-4">
                             <div>
-                                <h4>Check My Task List</h4>
-                                <p>1/10/2024 - 12:00pm</p>
+                                <img src="imgs/team-04.png" alt="" class="w-[50px] rounded-full">
                             </div>
-                            <div>
-                                <h4>Check My Task List</h4>
-                                <p>1/10/2024 - 12:00pm</p>
-                            </div>
-                            <div>
-                                <h4>Check My Task List</h4>
-                                <p>1/10/2024 - 12:00pm</p>
-                            </div>
-                            <div>
-                                <h4>Check My Task List</h4>
-                                <p>1/10/2024 - 12:00pm</p>
+                            <div class="flex flex-col gap-1">
+                                <h4 class="font-bold">Mohab Mohamed</h4>
+                                <p class="text-gray-500">About 3 Hours Ago</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="header">
-                            <h2>Latest Posts</h2>
+
+                        <hr class="mt-5 mb-3"/>
+                        <div class="para px-5">
+                            <p class="leading-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae libero minus,
+                                quidem optio quas, fuga quis at, dolor quia maiores ipsum officiis. Facere cumque minus quo deserunt nesciunt magni! Aut.</p>
                         </div>
-                        <div class="person">
-                            <div>
-                                <img src="imgs/team-04.png" alt="">
-                            </div>
-                            <div>
-                                <h4>Mohab Mohamed</h4>
-                                <p>About 3 Hours Ago</p>
-                            </div>
-                        </div>
-                        <div class="para">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae libero minus,
-                            quidem optio quas, fuga quis at, dolor quia maiores ipsum officiis. Facere cumque minus quo deserunt nesciunt magni! Aut.</p>
-                        </div>
-                        <div class="icons">
-                            <div class="icon">
+                        <hr class="mt-3 mb-3"/>
+
+                        <div class="icons flex px-5 justify-between mt-8 items-center">
+                            <div class="icon text-gray-500 flex gap-2">
                                 <i class="fa-regular fa-heart"></i>
                                 <p>1.8k</p>
                             </div>
-                            <div class="icon">
+                            <div class="icon text-gray-500 flex gap-2 items-center">
                                 <i class="fa-regular fa-comments"></i>
                                 <p>250</p>
                             </div>
@@ -347,115 +489,135 @@
                     </div>
                     <div class="card">
                         <div class="header">
-                            <h2>Social Media State</h2>
+                            <h2 class="header-title">Social Media State</h2>
                         </div>
-                        <div class="social-box">
-                            <div class="box">
-                                <i class="fa-brands fa-twitter"></i>
-                                <span></span>
-                                <h3>90K Followers</h3>
-                                <p>Follow</p>
+
+                        <div class="social-box flex flex-col gap-3 px-5 mt-2 pb-6">
+
+                            <div class="box flex items-center gap-3 relative z-10">
+                                <i class="fa-brands fa-twitter text-white p-4 text-[25px] bg-blue-400"></i>
+                                <span class="absolute w-full h-full bg-blue-100 -z-10"></span>
+                                <div class="flex justify-between w-full items-center px-3">
+                                    <h3 class="text-blue-400">90K Followers</h3>
+                                    <p class="bg-blue-400 p-2 rounded-md text-white">Follow</p>
+                                </div>
                             </div>
-                            <div class="box">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                <span></span>
-                                <h3>2M Like</h3>
-                                <p>Like</p>
+
+                            <div class="box flex items-center gap-3 relative z-10">
+                                <i class="fa-brands fa-facebook-f text-white p-4 text-[25px] bg-blue-600 w-[60px] text-center"></i>
+                                <span class="absolute w-full h-full bg-blue-100 -z-10"></span>
+                                <div class="flex justify-between w-full items-center px-3">
+                                    <h3 class="text-blue-600">2M Like</h3>
+                                    <p class="bg-blue-600 p-2 rounded-md text-white">Like</p>
+                                </div>
                             </div>
-                            <div class="box">
-                                <i class="fa-brands fa-youtube"></i>
-                                <span></span>
-                                <h3>1M Subs</h3>
-                                <p>Subscribe</p>
+
+                            <div class="box flex items-center gap-3 relative z-10">
+                                <i class="fa-brands fa-youtube text-white p-4 text-[25px] bg-red-700 w-[60px] text-center"></i>
+                                <span class="absolute w-full h-full bg-red-200 -z-10"></span>
+                                <div class="flex justify-between w-full items-center px-3">
+                                    <h3 class="text-red-700">1M Subs</h3>
+                                    <p class="bg-red-700 p-2 rounded-md text-white">Subscribe</p>
+                                </div>
                             </div>
-                            <div class="box">
-                                <i class="fa-brands fa-linkedin"></i>
-                                <span></span>
-                                <h3>70K Follwers</h3>
-                                <p>Follow</p>
+
+                            <div class="box flex items-center gap-3 relative z-10">
+                                <i class="fa-brands fa-linkedin text-white p-4 text-[25px] bg-blue-700 w-[70px] text-center"></i>
+                                <span class="absolute w-full h-full bg-blue-100 -z-10"></span>
+                                <div class="flex justify-between w-full items-center px-3">
+                                    <h3 class="text-blue-700">70K Follwers</h3>
+                                    <p class="bg-blue-700 p-2 rounded-md text-white">Follow</p>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="large-card">
+
+                <div class="card col-span-3 mt-5 mb-10">
                     <div class="header">
-                        <h2>Projects</h2>
+                        <h2 class="header-title">Projects</h2>
                     </div>
-                    <div class="projects-table">
-                        <table >
-                            <thead>
-                                <th>Name</th>
+
+                    <div class="projects-table w-full px-4 pb-5">
+
+                        <table class="w-full px-4" >
+
+                            <thead class="border-2 ">
+                                <th class="p-3">Name</th>
                                 <th>Finish Date</th>
                                 <th>Clint</th>
                                 <th>Price</th>
-                                <th>Team</th>
+                                <th class="max-md:hidden">Team</th>
                                 <th>Status</th>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Minstry Wikipedia</td>
+
+                            <tbody class="w-full text-center ">
+                                <tr class="border-2 ">
+                                    <td class="p-3">Minstry Wikipedia</td>
                                     <td>10 May 2022</td>
                                     <td>Minstry</td>
                                     <td>$5300</td>
-                                    <td>
-                                        <img src="imgs/avatar-02.png" alt="">
-                                        <img src="imgs/team-04.png" alt="">
-                                        <img src="imgs/team-05.png" alt="">
+                                    <td class="flex justify-center  max-md:hidden">
+                                        <img src="imgs/avatar-02.png" alt=""  class="w-[40px] rounded-full">
+                                        <img src="imgs/team-04.png" alt="" class="w-[40px] rounded-full">
+                                        <img src="imgs/team-05.png" alt="" class="w-[40px] rounded-full">
                                     </td>
                                     <td><p>Pending</p></td>
                                 </tr>
-                                <tr>
-                                    <td>Am Shop</td>
+
+                                <tr class=" border-2">
+                                    <td class="p-3">Am Shop</td>
                                     <td>12 Oct 2021</td>
                                     <td>Am Academy</td>
                                     <td>$1500</td>
-                                    <td> 
-                                        <img src="imgs/avatar-02.png" alt="">
-                                        <img src="imgs/team-04.png" alt="">
+                                    <td class="flex justify-center p-3 max-md:hidden"> 
+                                        <img src="imgs/avatar-02.png" alt="" class="size-[40px] rounded-full">
+                                        <img src="imgs/team-04.png" alt=""   class="size-[40px] rounded-full">
                                     </td>
                                     <td><p>In Progress</p></td>
                                 </tr>
-                                <tr>
-                                    <td>Bouba App</td>
+                                <tr class="border-2">
+                                    <td class="p-3">Bouba App</td>
                                     <td>05 Sep 2021</td>
                                     <td>Bouba</td>
                                     <td>$800</td>
-                                    <td>
-                                        <img src="imgs/avatar-02.png" alt="">
+                                    <td class="flex justify-center p-3 max-md:hidden">
+                                        <img src="imgs/avatar-02.png" alt="" class="size-[40px] rounded-full">
                                     </td>
                                     <td><p>Complated</p></td>
                                 </tr>
-                                <tr>
-                                    <td>Mohamed Website</td>
+                                <tr class="border-2">
+                                    <td class="p-3">Mohamed Website</td>
                                     <td>22 May 2021</td>
                                     <td>Mohamed</td>
                                     <td>$600</td>
-                                    <td>
-                                        <img src="imgs/avatar-02.png" alt="">
-                                        <img src="imgs/team-04.png" alt="">
+                                    <td class="flex justify-center p-3 max-md:hidden">
+                                        <img src="imgs/avatar-02.png" alt="" class="size-[40px] rounded-full">
+                                        <img src="imgs/team-04.png" alt=""   class="size-[40px] rounded-full">
                                     </td>
                                     <td><p>Complated</p></td>
                                 </tr>
                                 
-                                <tr>
-                                    <td>Ahmed Website</td>
+                                <tr class="border-2">
+                                    <td class="p-3">Ahmed Website</td>
                                     <td>24 May 2021</td>
                                     <td>Ahmed</td>
                                     <td>$300</td>
-                                    <td>
-                                        <img src="imgs/avatar-02.png" alt="">
+                                    <td class="flex justify-center p-3 max-md:hidden">
+                                        <img src="imgs/avatar-02.png" alt="" class="w-[40px] rounded-full">
                                     </td>
                                     <td><p>Rejected</p></td>
                                 </tr>
-                                <tr>
-                                    <td>Khaled Application</td>
+                                <tr class="border-2 ">
+                                    <td class="p-3">Khaled Application</td>
                                     <td>Complated</td>
                                     <td>01 Mar 2021</td>
                                     <td>$2600</td>
-                                    <td>
-                                        <img src="imgs/avatar-02.png" alt="">
-                                        <img src="imgs/team-04.png" alt="">
-                                        <img src="imgs/team-05.png" alt="">
+                                    <td class="flex justify-center p-3 max-md:hidden">
+                                        <img src="imgs/avatar-02.png" alt="" class="w-[40px] rounded-full">
+                                        <img src="imgs/team-04.png" alt=""   class="w-[40px] rounded-full">
+                                        <img src="imgs/team-05.png" alt=""   class="w-[40px] rounded-full">
                                     </td>
                                     <td><p>Khaled</p></td>
                                 </tr>
@@ -465,8 +627,9 @@
 
                         </table>
                     </div>
-                </div>
+                </div> 
             </div>
+        </div>
         </div>
     </body>
 </html>
