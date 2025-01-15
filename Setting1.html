@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Am Robotics</title>
+
+        <!-- <link rel="stylesheet" href="css/page.css"> -->
+        <link rel="stylesheet" href="css/output.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/Normlizer.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div class="dashborad flex h-[100vh]">
+
+            <div class="sidebar w-fit flex flex-col items-center shadow-md shadow-black  max-sm:hidden">
+                <div class="mt-2 relative">
+                    <h3 class="pb-2 font-[500]">Am Academy</h3>
+                    <span class="absolute left-0 bottom-0 w-full bg-black h-[2px] "></span>
+                    <span class="absolute left-1/2 -translate-x-1/2 top-full w-[10px] h-[10px] -translate-y-1/2 bg-black rounded-full border-2 border-white "></span>
+
+                </div>
+
+                <ul class="mt-2">
+                    <li class="active p-3  hover:bg-gray-200 transition-all duration-700">
+                        <a href="index.html" class="flex gap-2">
+                            <i class="fa-solid fa-chart-simple fa-fw "></i>
+                            <span>Dashborad</span>
+                        </a>
+                    </li>
+                    <li class="p-3 hover:bg-gray-200  bg-gray-200 transition-all duration-700">
+                        <a href="Setting1.html" class="flex gap-2">
+                            <i class="fa-solid fa-gear fa-fw "></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="p-3 hover:bg-gray-200 transition-all duration-700">
+                        <a href="profile.html"class="flex gap-2">
+                            <i class="fa-solid fa-chalkboard fa-fw "></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="p-3 hover:bg-gray-200 transition-all duration-700">
+                        <a href="projects.html" class="flex gap-2">
+                            <i class="fa-solid fa-list-check fa-fw"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="contant  flex flex-col w-full z-10">
+                <div class="search p-5 col-span-3">
+                    <div class="search-box ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Type A Keyword">
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 w-full px-5 h-[100vh] ">
+                <h3 class="pt-2 font-[500] text-[25px]">Setting</h3>
+
+                <div class="cards w-full grid gap-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  mt-10">
+
+                    <div class=" card w-full ">
+                        <div class="header w-full">
+                            <h2 class="header-title">Site Control</h2>
+                            <p class="text-gray-500">Control The Website If There Is A Maintance</p>
+                        </div>
+                        
+                        <div class="control flex justify-between items-center  px-3">
+                            <div class="flex flex-col gap-1">
+                                <h4>Website Control</h4>
+                                <p class="text-gray-500">Open/Colse Website And Write The Reason</p>
+                            </div>
+
+                            <div class=" w-[60px]">
+                                <div class="bg-blue-500 w-[60px] rounded-full relative ">
+                                    <span class="absolute bg-white size-5 right-0   rounded-full"></span>
+                                    <i class="fa-solid fa-check text-blue-500 z-[100]"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full mt-5 px-3 h-full">
+                            <textarea class="w-full h-[50%] bg-transparent border-2 rounded-md p-2" name="" id="" placeholder="Close Message Content"></textarea>
+                        </div>
+                    </div>
+                    <div class="card pb-5">
+                        <div class="header">
+                            <h2 class="header-title">Genral Info <h2>
+                            <p class="text-gray-500">Genral Information About Yourself</p>
+                        </div>
+
+                        <form action="" class="flex flex-col px-4 gap-5">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-gray-500 px-1" for="first-name">First Name</label>
+                                <input class="border-2 rounded-md p-1" type="text" id="first-name" placeholder="First Name">
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <label class="text-gray-500 px-1" for="last-name">Last Name</label>
+                                <input class="border-2 rounded-md p-1" type="text" id="last-name" placeholder="Last Name">
+                            </div>
+                            <div class=" flex justify-between items-center">
+                                <div class="flex flex-col gap-1 w-[80%]">
+                                    <label class="text-gray-500 px-1" for="email-name">Email</label>
+                                <input class="border-2 rounded-md p-1" type="email" id="email-name" placeholder="o@gg.com">
+                                </div>
+                                <button class="bg-blue-500 p-2 text-white rounded-md mt-4 ">Change</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="header-title">Site Control</h2>
+                            <p class="text-gray-500">Control The Website If There Is A Maintance</p>
+                        </div>
+                        <div class="control-box">
+
+                            <div class="control flex justify-between px-4 items-center  ">
+                               <div class="flex-col ">
+                                <h4 class="font-[500]">Password</h4>
+                                <p class="text-gray-500">Last Change On 24/5/2024</p>
+                               </div>
+                                <h3 class="bg-blue-500 p-2 rounded-md text-white">Change</h3>
+                            </div>
+                            <hr class="mt-4 mb-5"/>
+
+                            <div class="control flex justify-between px-4 items-center  ">
+                               <div class="flex-col ">
+                                <h4 class="font-[500]">Two-Factor Authentication</h4>
+                                <p class="text-gray-500">Enable/Disable The Feature</p>
+                               </div>
+                               <div class=" w-[60px]">
+                                <div class="bg-blue-500 w-[60px] rounded-full relative ">
+                                    <span class="absolute bg-white size-5 right-0   rounded-full"></span>
+                                    <i class="fa-solid fa-check text-blue-500 z-[100]"></i>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            <hr class="mt-4 mb-5"/>
+
+                            <div class="control flex justify-between px-4 items-center  ">
+                                <div class="flex-col ">
+                                 <h4 class="font-[500]">Devices</h4>
+                                 <p class="text-gray-500">Check The Login Devices List</p>
+                                </div>
+                                 <h3 class="bg-gray-100 p-2 rounded-md text-black">Devices</h3>
+                             </div>
+                             
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <h2 class="header-title">Social Info</h2>
+                            <p class="text-gray-500">Social Media Information</p>
+                        </div>
+                        <div class="social-box flex flex-col gap-3 px-3">
+
+                            <div class="box flex items-center gap-3 bg-gray-200 rounded-md p-1 border-2 border-gray-400  ">
+                                <i class="fa-brands fa-twitter text-gray-400 w-[20px] text-center"></i>
+                
+                                <h3 class="text-gray-400  border-l-2 px-2 border-gray-400">90K Followers</h3>
+                            </div>
+                            
+                            <div class="box flex items-center gap-3 bg-gray-200 rounded-md p-1 border-2 border-gray-400  ">
+                                <i class="fa-brands fa-facebook-f text-gray-400 w-[20px] text-center"></i>
+                                
+                                <h3 class="text-gray-400  border-l-2 px-2 border-gray-400">2M Like</h3>
+                            </div>
+                            <div class="box flex items-center gap-3 bg-gray-200 rounded-md p-1 border-2 border-gray-400  ">
+                                <i class="fa-brands fa-youtube text-gray-400 w-[20px] text-center"></i>
+                                
+                                <h3 class="text-gray-400  border-l-2 px-2 border-gray-400">1M Subs</h3>
+                            </div>
+                            <div class="box flex items-center gap-3 bg-gray-200 rounded-md p-1 border-2 border-gray-400  ">
+                                <i class="fa-brands fa-linkedin text-gray-400 w-[20px] text-center"></i>
+                                
+                                <h3 class="text-gray-400  border-l-2 px-2 border-gray-400">70K Follwers</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card pb-5">
+                        <div class="header">
+                            <h2 class="header-title">Widgets Control</h2>
+                            <p class="text-gray-500">Show/Hide Widgets</p>
+                        </div>
+                        <div class="check-box flex flex-col gap-4 px-3">
+                            <div>
+                                <input type="checkbox" name="" id="quick-draft">
+                                <label for="quick-draft">Quick Draft</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="yearly-target">
+                                <label for="yearly-target">Yearly Target</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="tickits-statistics">
+                                <label for="tickits-statistics">Tickits Statistics</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="latest-news">
+                                <label for="latest-news">Latest News</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="latest-tasks">
+                                <label for="latest-tasks">Latest Tasks</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="top-search-items">
+                                <label for="top-search-items">Top Search Items</label>
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class="card ">
+                        <div class="header">
+                            <h2 class="header-title">Backup Manger </h2>
+                            <p class="text-gray-500">Control Backup Time And Location</p>
+                        </div>
+
+                        <div class="choose-box px-3 flex flex-col gap-2">
+                            <div>
+                                <input type="radio" id="daily">
+                                <label for="daily">Dialy</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="weekly">
+                                <label for="weekly">Weekly</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="monthly">
+                                <label for="monthly">Monthly</label>
+                            </div>
+                        </div>
+
+                        <div class="boxes flex px-3 mt-5 justify-between gap-3 ">
+
+                            <div class="box flex flex-col items-center border-2 border-gray-200 p-3 w-full rounded-md">
+                                <i class="fa-solid fa-bars-progress"></i>
+                                <p>Megaman</p>
+                            </div>
+                            <div class="box active flex flex-col items-center border-2 border-gray-200 p-3 w-full rounded-md">
+                                <i class="fa-solid fa-bars-progress"></i>
+                                <p>Zero</p>
+                            </div>
+                            <div class="box flex flex-col items-center border-2 border-gray-200 p-3 w-full rounded-md">
+                                <i class="fa-solid fa-bars-progress"></i>
+                                <p>Segma</p>
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                </div>
+
+                
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
